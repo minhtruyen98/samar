@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samar</title>
+    <!-- Google font roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Font awnsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css" integrity="sha512-vebUliqxrVkBy3gucMhClmyQP9On/HAWQdKDXRaAlb/FKuTbxkjPKUyqVOxAcGwFDka79eTF+YXwfke1h3/wfg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Favicon icon -->
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <!-- AOS libary -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- base css -->
+    <link rel="stylesheet" href="./css/base.css" />
+    <!-- main CSS -->
+    <link rel="stylesheet" href="./css/main.css" />
+</head>
+<body>
+    <!--******************** HEADER ***********************-->
+    <header class="header">
+        <div class="grid">
+            <div class="header__content">
+                <!-- header logo -->
+                <div class="header__logo">
+                    <a href="#">
+                        <img src="./img/logo-2.png" alt="Samar logo" />
+                    </a>
+                </div>
+                <!-- header naigation bar -->
+                <nav>
+                    <ul class="header__nav">
+                        <li class="header__nav-item">
+                            <a href="#" class="header__link">
+                                <span>Home</span>
+                                <i class="fa-solid fa-chevron-down"></i>    
+                            </a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__link">
+                                <span>Pages</span>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__link">
+                                <span>Services</span>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__link">
+                                <span>Post Layout</span>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__link">
+                                <span>Blog</span>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__link">
+                                <span>Contact Us</span>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="btn">
+                    Get A Quote
+                </button>
+            </div>
+            </div>
+    </header>
+    <!--******************** INTRO ***********************-->
+    <section class="intro">
+        <!-- grid tao khung co max width 1200px -->
+        <div class="grid">
+            <div class="intro__content">
+                <div class="intro__left">
+                    <!-- intro title -->
+                    <div class="title">
+                        <h3 data-aos="fade-up" data-aos-delay="0">We are The Best</h3>
+                        <h2 data-aos="fade-up" data-aos-delay="800">Freelance Product Designer Running</h2>
+                        <p class="title-desc" data-aos="fade-up" data-aos-delay="1600">
+                            We develop the relationships that underpin the next phase in your<br />
+                            organisatio's growth.
+                        </p>
+                    </div>
+                    <!-- intro check list -->
+                    <ul class="intro__list" data-aos="fade-up" data-aos-delay="2400">
+                        <li class="intro__item">
+                            <i class="fa-solid fa-check"></i>
+                            <span>Master's degree in designing</span>
+                        </li>
+                        <li class="intro__item">
+                            <i class="fa-solid fa-check"></i>
+                            <span>Master's degree in designing</span>
+                        </li>
+                    </ul>
+                    <div data-aos="fade-up" data-aos-delay="2800"> <!--thêm div để aos lib không ghi đè animate của button-->
+                        <button class="btn">Get Started</button>
+                    </div>
+                </div>
+                <div class="intro__right"  data-aos="slide-up" data-aos-delay="1600" data-aos-offset="500">
+                    <img src="./img/pic3_1.png" alt="thinking"/>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--******************** SERVICE ***********************-->
+    <section class="service">
+        <div class="grid">
+            <!-- service title -->
+            <div class="title text-center">
+                <h3>What We Do Best</h3>
+                <h2>Our Digital Services</h2>
+            </div>
+            <div class="service__content">
+                <!-- service card wrap để gói lại từng item nhằm tạo padding trái phải -->
+                <div class="service__card-wrap">
+                    <div class="service__card">
+                        <img class="service__card-img" src="./img/pic1_3.jpg" alt="web dev" />
+                        <h4 class="service__card-heading">Web Development</h4>
+                        <p class="service__card-desc">
+                            Vestibulum a efficitur ex. Ut iaculis dapibus iaculis. Praesent lacus magna, rhoncus quis magna quis.
+                        </p>
+                    </div>
+                </div>
+                <div class="service__card-wrap">
+                    <div class="service__card">
+                        <img class="service__card-img" src="./img/pic2_2.jpg" alt="web dev" />
+                        <h4 class="service__card-heading">Web Development</h4>
+                        <p class="service__card-desc">
+                            Vestibulum a efficitur ex. Ut iaculis dapibus iaculis. Praesent lacus magna, rhoncus quis magna quis.
+                        </p>
+                    </div>
+                </div>
+                <div class="service__card-wrap">
+                    <div class="service__card">
+                        <img class="service__card-img" src="./img//pic3_2.jpg" alt="web dev" />
+                        <h4 class="service__card-heading">Web Development</h4>
+                        <p class="service__card-desc">
+                            Vestibulum a efficitur ex. Ut iaculis dapibus iaculis. Praesent lacus magna, rhoncus quis magna quis.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--******************** ABOUT ***********************-->
+    <!-- phần about câu trúc tương tự phần intro -->
+    <section class="about">
+        <div class="grid">
+            <div class="about__content">
+                <div  class="about__left" data-aos="slide-right" data-aos-delay="500">
+                    <img src="./img/pic1.jpg" alt="thinking" />
+                </div>
+                <div class="about__right" data-aos="slide-left" data-aos-delay="500">
+                    <div class="title">
+                        <h3>About Us</h3>
+                        <h2>Build Your Business Website Better</h2>
+                        <p class="title-desc">
+                            Proin laoreet leo vel enim gravida, at porttitor metus ultricies. Cras eu velit enim. Vivamus blandit, dolor ut aliquet rutrum, ex elit mattis sapien, non molestie felis neque et nulla. Sed euismod turpis id nibh suscipit semper. Pellentesque dapibus risus arcu.
+                        </p>
+                    </div>
+                    <ul class="about__list">
+                        <li class="about__item">
+                            <i class="fa-solid fa-check"></i>
+                            <span>We support programs that create advancement opportunities for people.</span>
+                        </li>
+                        <li class="about__item">
+                            <i class="fa-solid fa-check"></i>
+                            <span>Get a view of events and trends. Be updated on our recent news.</span>
+                        </li>
+                        <li class="about__item">
+                            <i class="fa-solid fa-check"></i>
+                            <span>Finally, it all comes down to people. Creating a winning team.</span>
+                        </li>
+                        <li class="about__item">
+                            <i class="fa-solid fa-check"></i>
+                            <span>Get a view of events and trends. Be updated on our recent news.</span>
+                        </li>
+                    </ul>
+                    <button class="btn">Get Started</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!--******************** COUNT ***********************-->
+    <section class="count">
+        <div class="grid">
+            <div class="count__content">
+                <div class="count__item">
+                    <i class="las la-smile-beam"></i>
+                    <p><span class="counter">18</span> MIL</p>
+                    <span>Satisfied Clients</span>
+                </div>
+                <div class="count__item">
+                    <i class="las la-smile-beam"></i>
+                    <p><span class="counter">20</span> MIL</p>
+                    <span>Project Completed</span>
+                </div>
+                <div class="count__item">
+                    <i class="las la-smile-beam"></i>
+                    <p><span class="counter">30</span> MIL</p>
+                    <span>Project Lunched</span>
+                </div>
+                <div class="count__item">
+                    <i class="las la-smile-beam"></i>
+                    <p><span class="counter">50</span></p>
+                    <span>Years Completed</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--******************** FEATURE ***********************-->
+    <section class="feature">
+        <div class="grid">
+            <div class="feature__content">
+                <div class="feature__left">
+                    <!-- feature title -->
+                    <div class="title" data-aos="slide-right" data-aos-delay="100">
+                        <h3>Our Features</h3>
+                        <h2>Behind The Story Of Samar Agency</h2>
+                    </div>
+                    <!-- feature check list -->
+                    <ul class="feature__list">
+                        <li class="feature__item" data-aos="slide-left" data-aos-delay="300">
+                            <i class="las la-lightbulb"></i>
+                            <div class="feature__desc">
+                                <h3>Idea & Analysis Gathering</h3>
+                                <span>Maecenas laoreet efficitur sagittis. Aliquam eleifend nisl leo, sit amet consequat augue.</span>
+                            </div>
+                        </li>
+                        <li class="feature__item" data-aos="slide-left" data-aos-delay="600">
+                            <i class="las la-laptop-code"></i>
+                            <div class="feature__desc">
+                                <h3>Design & Developing</h3>
+                                <span>Maecenas laoreet efficitur sagittis. Aliquam eleifend nisl leo, sit amet consequat augue.</span>
+                            </div>
+                        </li>
+                        <li class="feature__item" data-aos="slide-left" data-aos-delay="800">
+                            <i class="las la-rocket"></i>
+                            <div class="feature__desc">
+                                <h3>Testing & Lunching</h3>
+                                <span>Maecenas laoreet efficitur sagittis. Aliquam eleifend nisl leo, sit amet consequat augue.</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="feature__right">
+                    <img src="./img/pic3.png" alt="Working" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--******************** PORTFOLO ***********************-->
+    <section class="portfolo">
+        <div class="grid">
+            <div class="title text-center">
+                <h3>Portfolio</h3>
+                <h2>Our Latest Work</h2>
+            </div>
+            <div class="portfolo__content">
+                <div class="portfolo__item" data-aos="slide-up" data-aos-delay="100">
+                    <img src="./img/pic1_2.jpg" alt="picture" />
+                    <div class="portfolo__overlay">
+                        <i class="las la-plus"></i>
+                        <div class="portfolo__desc">
+                            <h3>Software Landing</h3>
+                            <span>By Jhone Doe</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolo__item" data-aos="slide-up" data-aos-delay="100">
+                    <img src="./img/pic2_1.jpg" alt="picture" />
+                    <div class="portfolo__overlay">
+                        <i class="las la-plus"></i>
+                        <div class="portfolo__desc">
+                            <h3>Software Landing</h3>
+                            <span>By Jhone Doe</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolo__item" data-aos="slide-up" data-aos-delay="600">
+                    <img src="./img/pic3_1.jpg" alt="picture" />
+                    <div class="portfolo__overlay">
+                        <i class="las la-plus"></i>
+                        <div class="portfolo__desc">
+                            <h3>Software Landing</h3>
+                            <span>By Jhone Doe</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolo__item" data-aos="slide-up" data-aos-delay="800">
+                    <img src="./img/pic4.jpg" alt="picture" />
+                    <div class="portfolo__overlay">
+                        <i class="las la-plus"></i>
+                        <div class="portfolo__desc">
+                            <h3>Software Landing</h3>
+                            <span>By Jhone Doe</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolo__item" data-aos="slide-up" data-aos-delay="1100">
+                    <img src="./img/pic6.jpg" alt="picture" />
+                    <div class="portfolo__overlay">
+                        <i class="las la-plus"></i>
+                        <div class="portfolo__desc">
+                            <h3>Software Landing</h3>
+                            <span>By Jhone Doe</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolo__item" data-aos="slide-up" data-aos-delay="1300">
+                    <img src="./img/pic5.jpg" alt="picture" />
+                    <div class="portfolo__overlay">
+                        <i class="las la-plus"></i>
+                        <div class="portfolo__desc">
+                            <h3>Software Landing</h3>
+                            <span>By Jhone Doe</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--******************** PLAN ***********************-->
+    <section class="plan">
+        <!-- cấu trúc giống phần service -->
+        <div class="grid">
+            <!-- plan title -->
+            <div class="title text-center">
+                <h3>What We Do Best</h3>
+                <h2>Our Digital Services</h2>
+            </div>
+            <div class="plan__content">
+                <!-- plan card wrap để gói lại từng item nhằm tạo padding trái phải -->
+                <div class="plan__card-wrap">
+                    <div class="plan__card">
+                        <h4 class="plan__card-heading">Basic Plan</h4>
+                        <img class="plan__card-img" src="./img/pic4_1.jpg" alt="web dev" />
+                        <p class="plan__card-price">
+                            $49<span>/Month</span>
+                        </p>
+                        <ul class="plan__card-list">
+                            <li class="plan__card-item">
+                                <i class="fa-solid fa-check"></i>
+                                <span>Graphic Design</span>
+                            </li>
+                            <li class="plan__card-item">
+                                <i class="fa-solid fa-check"></i>
+                                <span>Web Design</span>
+                            </li>
+                            <li class="plan__card-item">
+                                <i class="fa-solid fa-check"></i>
+                                <span>UI/UX</span>
+                            </li>
+                            <li class="plan__card-item">
+                                <i class="fa-solid fa-check"></i>
+                                <span>HTML/CSS</span>
+                            </li>
+                            <li class="plan__card-item">
+                                <i class="fa-solid fa-check"></i>
+                                <span>SEO Marketing</span>
+                            </li>
+                            <li class="plan__card-item">
+                                <i class="fa-solid fa-check"></i>
+                                <span>Business Analysis</span>
+                            </li>
+                        </ul>
+                        <button class="btn">Start Now</button>
+                    </div>
+                </div>
+                <div class="plan__card-wrap">
+                    <div class="plan__card">
+                        <h4 class="plan__card-heading">Basic Plan</h4>
+                        <img class="plan__card-img" src="./img/pic5_1.jpg" alt="web dev" />
+                        <p class="plan__card-price">
+                            $49<span>/Month</span>
+                        </p>
+                        <ul class="plan__card-list">
+                            <li class="plan__card-item">
+                                <i class="fa-solid fa-check"></i>
+                                <span>Graphic Design</span>
+                            </li>
+                            <li class="plan__card-item">
+                                <i class="fa-solid fa-check"></i>
+                                <span>Web Design</span>
+                            </li>
+                            <li class="plan__card-item">
+                                <i class="fa-solid fa-check"></i>
+                                <span>UI/UX</span>
+                            </li>
+                            <li class="plan__card-item">
+                                <i class="fa-solid fa-check"></i>
+                                <span>HTML/CSS</span>
+                            </li>
+                            <li class="plan__card-item">
+                                <i class="fa-solid fa-check"></i>
+                                <span>SEO Marketing</span>
+                            </li>
+                            <li class="plan__card-item">
+                                <i class="fa-solid fa-check"></i>
+                                <span>Business Analysis</span>
+                            </li>
+                        </ul>
+                        <button class="btn">Start Now</button>
+                    </div>
+                </div>
+                <div class="plan__card-wrap">
+                    <div class="plan__card">
+                        <h4 class="plan__card-heading">Basic Plan</h4>
+                        <img class="plan__card-img" src="./img/pic6_1.jpg" alt="web dev" />
+                        <p class="plan__card-price">
+                            $49<span>/Month</span>
+                        </p>
+                        <ul class="plan__card-list">
+                            <li class="plan__card-item">
+                                <i class="fa-solid fa-check"></i>
+                                <span>Graphic Design</span>
+                            </li>
+                            <li class="plan__card-item">
+                                <i class="fa-solid fa-check"></i>
+                                <span>Web Design</span>
+                            </li>
+                            <li class="plan__card-item">
+                                <i class="fa-solid fa-check"></i>
+                                <span>UI/UX</span>
+                            </li>
+                            <li class="plan__card-item">
+                                <i class="fa-solid fa-check"></i>
+                                <span>HTML/CSS</span>
+                            </li>
+                            <li class="plan__card-item">
+                                <i class="fa-solid fa-check"></i>
+                                <span>SEO Marketing</span>
+                            </li>
+                            <li class="plan__card-item">
+                                <i class="fa-solid fa-check"></i>
+                                <span>Business Analysis</span>
+                            </li>
+                        </ul>
+                        <button class="btn">Start Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--******************** FEEDBACK ***********************-->
+    <section class="feedback">
+
+    </section>
+    <!--******************** NEWS ***********************-->
+    <section class="news">
+        <div class="grid">
+            <!-- news title -->
+            <div class="title text-center">
+                <h3>Our Blog</h3>
+                <h2>Latest News & Blog</h2>
+            </div>
+            <div class="news__content">
+                <!-- news card wrap để gói lại từng item nhằm tạo padding trái phải -->
+                <div class="news__card-wrap">
+                    <div class="news__card">
+                        <div class="news__card-header">
+                            <img class="news__card-img" src="./img/pic3.jpg" alt="web dev" />
+                            <div class="news__card-time">
+                                <span>23 MARCH 2022</span>
+                            </div>
+                        </div>
+                        <div class="news__card-content">
+                            <h4 class="news__card-heading">Lorem ipsum dolor sit amet consectetur.</h4>
+                            <p class="news__card-desc">
+                                Nunc convallis sagittis dui eu dictum. Cras sodales id ipsum ac aliquam. Phasellus justoquam.
+                            </p>
+                        </div>
+                        <div class="news__card-footer">
+                            <div  class="news__card-author">
+                                <i class="las la-user-circle"></i>
+                                BY
+                                <span>Johne Doe</span>
+                            </div>
+                            <div class="news__card-comment">
+                                <i class="las la-comment"></i>
+                                COMMENTS
+                                <span>15</span>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="news__card-wrap">
+                    <div class="news__card">
+                        <div class="news__card-header">
+                            <img class="news__card-img" src="./img/pic1_1.jpg" alt="web dev" />
+                            <div class="news__card-time">
+                                <span>23 MARCH 2022</span>
+                            </div>
+                        </div>
+                        <div class="news__card-content">
+                            <h4 class="news__card-heading">Lorem ipsum dolor sit amet consectetur.</h4>
+                            <p class="news__card-desc">
+                                Nunc convallis sagittis dui eu dictum. Cras sodales id ipsum ac aliquam. Phasellus justoquam.
+                            </p>
+                        </div>
+                        <div class="news__card-footer">
+                            <div  class="news__card-author">
+                                <i class="las la-user-circle"></i>
+                                BY
+                                <span>Johne Doe</span>
+                            </div>
+                            <div class="news__card-comment">
+                                <i class="las la-comment"></i>
+                                COMMENTS
+                                <span>15</span>
+                            </div>
+                        </div>                     
+                    </div>
+                </div> 
+                <div class="news__card-wrap">
+                    <div class="news__card">
+                        <div class="news__card-header">
+                            <img class="news__card-img" src="./img/pic2.jpg" alt="web dev" />
+                            <div class="news__card-time">
+                                <span>23 MARCH 2022</span>
+                            </div>
+                        </div>
+                        <div class="news__card-content">
+                            <h4 class="news__card-heading">Lorem ipsum dolor sit amet consectetur.</h4>
+                            <p class="news__card-desc">
+                                Nunc convallis sagittis dui eu dictum. Cras sodales id ipsum ac aliquam. Phasellus justoquam.
+                            </p>
+                        </div>
+                        <div class="news__card-footer">
+                            <div  class="news__card-author">
+                                <i class="las la-user-circle"></i>
+                                BY
+                                <span>Johne Doe</span>
+                            </div>
+                            <div class="news__card-comment">
+                                <i class="las la-comment"></i>
+                                COMMENTS
+                                <span>15</span>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div> 
+        </div>
+    </section>
+    <!--******************** FOOTER ***********************-->
+    <footer class="footer">
+        <div class="grid">
+            <div class="footer__subscribe" data-aos="slide-up" data-aos-delay="100">
+                <span>Subscribe To Our Newsletter</span>
+                <div class="footer__subscibe-box">
+                    <input type="email" name="email" />
+                    <button class="btn footer__subscibe-btn">
+                        <i class="las la-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="footer__contact" data-aos="fade" data-aos-delay="800">
+                <div class="contact__item">
+                    <img src="./img/logo-white.png" alt=logo" class="coctact__logo">
+                    <ul class="contact__list info-list">
+                        <li class="contact__list-item info">
+                            <i class="fa-solid fa-phone"></i>
+                            1800-123-4567<br />
+                            +91 987-654-3210
+                        </li>
+                        <li class="contact__list-item info">
+                            <i class="fa-solid fa-envelope"></i>
+                            info@example.com<br />
+                            services@gmail.com
+                        </li>
+                        <li class="contact__list-item info">
+                            <i class="fa-solid fa-location-dot"></i>
+                            Demo Address #8901 Marmora<br />
+                            Road City
+                        </li>
+                    </ul>
+                </div>
+                <div class="contact__item">
+                    <h3>Our links</h3>
+                    <ul class="contact__list">
+                        <li class="contact__list-item">
+                            <a href="#" class="contact__link">
+                                <i class="las la-angle-right"></i>
+                                Home
+                            </a>
+                        </li>
+                        <li class="contact__list-item">
+                            <a href="#" class="contact__link">
+                                <i class="las la-angle-right"></i>
+                                About Us
+                            </a>
+                        </li>
+                        <li class="contact__list-item">
+                            <a href="#" class="contact__link">
+                                <i class="las la-angle-right"></i>
+                                Services
+                            </a>
+                        </li>
+                        <li class="contact__list-item">
+                            <a href="#" class="contact__link">
+                                <i class="las la-angle-right"></i>
+                                Team
+                            </a>
+                        </li>
+                        <li class="contact__list-item">
+                            <a href="#" class="contact__link">
+                                <i class="las la-angle-right"></i>
+                                Blog
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contact__item">
+                    <h3>Our Services</h3>
+                    <ul class="contact__list">
+                        <li class="contact__list-item">
+                            <a href="#" class="contact__link">
+                                <i class="las la-angle-right"></i>
+                                Strategy & Research
+                            </a>
+                        </li>
+                        <li class="contact__list-item">
+                            <a href="#" class="contact__link">
+                                <i class="las la-angle-right"></i>
+                                Web Development
+                            </a>
+                        </li>
+                        <li class="contact__list-item">
+                            <a href="#" class="contact__link">
+                                <i class="las la-angle-right"></i>
+                                Web Solution
+                            </a>
+                        </li>
+                        <li class="contact__list-item">
+                            <a href="#" class="contact__link">
+                                <i class="las la-angle-right"></i>
+                                Digital Marketing
+                            </a>
+                        </li>
+                        <li class="contact__list-item">
+                            <a href="#" class="contact__link">
+                                <i class="las la-angle-right"></i>
+                                App Design
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contact__item">
+                    <h3>Other links</h3>
+                    <ul class="contact__list">
+                        <li class="contact__list-item">
+                            <a href="#" class="contact__link">
+                                <i class="las la-angle-right"></i>
+                                FAQ
+                            </a>
+                        </li>
+                        <li class="contact__list-item">
+                            <a href="#" class="contact__link">
+                                <i class="las la-angle-right"></i>
+                                Portfolio
+                            </a>
+                        </li>
+                        <li class="contact__list-item">
+                            <a href="#" class="contact__link">
+                                <i class="las la-angle-right"></i>
+                                Privacy Policy
+                            </a>
+                        </li>
+                        <li class="contact__list-item">
+                            <a href="#" class="contact__link">
+                                <i class="las la-angle-right"></i>
+                                Terms & Conditions
+                            </a>
+                        </li>
+                        <li class="contact__list-item">
+                            <a href="#" class="contact__link">
+                                <i class="las la-angle-right"></i>
+                                Support
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer__copyright-wrap">
+            <div class="grid">
+                <div class="footer__copyright">
+                    <p>Copyright © 2021 <span>DexignZone</span>. All rights reserved.</p>
+                    <div class="footer__social">
+                        <a href="#">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS lib -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init({
+        duration: 2000,
+        once: true,
+        mirror: false
+    });
+    </script>
+    <!-- counting up lib -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" 
+    integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./lib/count_up/jquery.countup.min.js"></script>
+    <script>
+        $('.counter').countUp();
+    </script>
+</body>
+</html>
