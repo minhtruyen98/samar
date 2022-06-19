@@ -160,10 +160,10 @@
     <section class="about">
         <div class="grid">
             <div class="about__content">
-                <div  class="about__left" data-aos="slide-right" data-aos-delay="500">
+                <div  class="about__left" data-aos="slide-right" data-aos-delay="300">
                     <img src="./img/pic1.jpg" alt="thinking" />
                 </div>
-                <div class="about__right" data-aos="slide-left" data-aos-delay="500">
+                <div class="about__right" data-aos="slide-left" data-aos-delay="300">
                     <div class="title">
                         <h3>About Us</h3>
                         <h2>Build Your Business Website Better</h2>
@@ -571,7 +571,7 @@
             </div>
             <div class="footer__contact" data-aos="fade" data-aos-delay="800">
                 <div class="contact__item">
-                    <img src="./img/logo-white.png" alt=logo" class="coctact__logo">
+                    <img src="./img/logo-white.png" alt="logo" class="coctact__logo">
                     <ul class="contact__list info-list">
                         <li class="contact__list-item info">
                             <i class="fa-solid fa-phone"></i>
@@ -716,6 +716,9 @@
             </div>
         </div>
     </footer>
+    <a href="#" class="cd-top text-replace js-cd-top backToTop">
+        <i class="las la-arrow-up"></i>
+    </a>
 
     <!-- AOS lib -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -723,7 +726,7 @@
     AOS.init({
         duration: 2000,
         once: true,
-        mirror: false
+        mirror: false,
     });
     </script>
     <!-- counting up lib -->
@@ -737,5 +740,8 @@
     <script>
         $('.counter').countUp();
     </script>
+    <!-- back to top lib -->
+    <script src="./lib/back_to_top/util.js"></script>
+    <script src="./lib/back_to_top/main.js"></script>
 </body>
 </html>
