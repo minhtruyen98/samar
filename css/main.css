@@ -481,7 +481,6 @@
     font-size: 2.2rem;
 }
 
-
 .portfolo__item:hover .portfolo__overlay,
 .portfolo__item:hover .portfolo__overlay .portfolo__desc,
 .portfolo__item:hover .portfolo__overlay i{
@@ -581,7 +580,155 @@
     font-size: 1.8rem;
     color: var(--title-color);
 }
+/****************** Testimonial ******************/
+.testimonial {
+    padding: 60px 0;
+    overflow: hidden;
+}
 
+.testimonial__bubble {
+    width: 280px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    height: 170px;
+}
+
+.testimonial__bubble::after,
+.testimonial__bubble::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 40px;
+    z-index: 2;
+}
+
+.testimonial__bubble::before {
+    left: 0;
+    background-image: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+}
+
+.testimonial__bubble::after {
+    right: 0;
+    background-image: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+}
+
+.testimonial__avatar {
+    position: relative;
+    margin: 0 auto;
+    width: 80px;
+    height: 100%;
+}
+
+.testimonial__avatar img {
+    height: 80px;
+    border-radius: 50%;
+    border: 6px solid var(--primary-color);
+    transform: translateY(40px);
+    transition: all 1s;
+}
+
+.testimonial__shape {
+    width: 50%;
+    height: 80px;
+    position: absolute;
+    top: 20px;
+    z-index: -1;
+    right: 50%;
+    background-color: var(--primary-color);
+    transform: translate(50%,40px);
+    background-image: url(../img/pattern12.png);
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: all 1s;
+    opacity: 0;
+}
+
+.swiper-slide-active .testimonial__shape {
+    transform: translate(50%,0);
+    opacity: 1;
+}
+.swiper-slide-active .testimonial__avatar img {
+    transform: translateY(0);
+}
+.swiper-slide-active .testimonial__avatar::after,
+.swiper-slide-active .testimonial__avatar::before {
+    opacity: 1;
+}
+
+.testimonial__avatar::after,
+.testimonial__avatar::before {
+    opacity: 0;
+    content: '';
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    transition: all 0.8s;
+}
+
+.testimonial__avatar::before {
+    width: 15px;
+    height: 15px;
+    bottom: 15%;
+}
+
+
+.testimonial__avatar::after {
+    width: 10px;
+    height: 10px;
+    bottom: 0;
+}
+
+.testimonial__box {
+    width: 100%;
+    position: relative;
+    min-height: 300px;
+}
+
+.testimonial__content {
+    max-width: 770px;
+    margin: 0 auto;
+    padding: 30px 30px 50px;
+    border-radius: 8px;
+    box-shadow: 0 24px 50px 0px rgb(0 0 0 / 10%);
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--text-color);
+    position: relative;
+}
+
+.testimonial__content h3 {
+    color: var(--title-color);
+    font-size: 2.8rem;
+    font-weight: 600;
+}
+
+.testimonial__content span {
+    display: block;
+    color: var(--primary-color);
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+.testimonial__content p {
+    color: var(--text-color);
+    font-style: italic;
+}
+
+.testimonial__content i {
+    top: 10%;
+    left: 2%;
+    position: absolute;
+    font-size: 10rem;
+    color: var(--primary-color);
+}
+
+.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: -20px;
+}
 /****************** news ******************/
 .news {
     padding: 60px 0;
@@ -591,11 +738,12 @@
 }
 .news__content {
     display: flex;
-    margin: 0 -15px;
+    /* margin: 0 -15px; */
 }
 
 .news__card-wrap {
-    width: calc(100% / 3);
+    /* width: calc(100% / 3); */
+    width: 100%;
     padding: 0 15px;
 }
 
@@ -879,8 +1027,8 @@
 /****************** back to top btn ******************/
 .backToTop {
     position: fixed;
-    bottom: 50px;
-    right: 50px;
+    bottom: 16px;
+    right: 16px;
     width: 50px;
     height: 50px;
     border-radius: 12px;
@@ -891,17 +1039,14 @@
     background-color: var(--primary-color);
     box-shadow:  2px 2px 20px 2px rgba(0, 0, 0, 0.3);
     transition: all 0.2s;
+    opacity: 0;
+    visibility: hidden;
 }
 
 .cd-top--is-visible {
     visibility: visible;
-    opacity: 1;
-  }
-  
-  .cd-top--fade-out { 
-    opacity: 0;
-  }
-
+    opacity: 0.8;
+}
 
 html:not(.no-js) [data-aos^=slide][data-aos^=slide] {
     opacity: 0;

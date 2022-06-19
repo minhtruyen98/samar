@@ -9,15 +9,30 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
     <!-- Font awnsome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css" integrity="sha512-vebUliqxrVkBy3gucMhClmyQP9On/HAWQdKDXRaAlb/FKuTbxkjPKUyqVOxAcGwFDka79eTF+YXwfke1h3/wfg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
     <!-- Favicon icon -->
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    
     <!-- AOS libary -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    
+    <!-- Owl carousel lib cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- swiper slider -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.4/swiper-bundle.css" integrity="sha512-303pOWiYlJMbneUN488MYlBISx7PqX8Lo/lllysH56eKO8nWIMEMGRHvkZzfXYrHj4j4j5NtBuWmgPnkLlzFCg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- light galery -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0/css/lightgallery-bundle.min.css" integrity="sha512-lgRFGedXdci5Ykc5Wbgd8QCzt3lBmnkWcMRAS8myln2eMCDwQBrHmjqvUj9rBcKOyWMC+EYJnvEppggw1v+m8Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
     <!-- base css -->
     <link rel="stylesheet" href="./css/base.css" />
+    
     <!-- main CSS -->
     <link rel="stylesheet" href="./css/main.css" />
 </head>
@@ -156,7 +171,6 @@
         </div>
     </section>
     <!--******************** ABOUT ***********************-->
-    <!-- phần about câu trúc tương tự phần intro -->
     <section class="about">
         <div class="grid">
             <div class="about__content">
@@ -205,17 +219,17 @@
                     <span>Satisfied Clients</span>
                 </div>
                 <div class="count__item">
-                    <i class="las la-smile-beam"></i>
+                    <i class="las la-robot"></i>
                     <p><span class="counter">20</span> MIL</p>
                     <span>Project Completed</span>
                 </div>
                 <div class="count__item">
-                    <i class="las la-smile-beam"></i>
+                    <i class="las la-rocket"></i>
                     <p><span class="counter">30</span> MIL</p>
                     <span>Project Lunched</span>
                 </div>
                 <div class="count__item">
-                    <i class="las la-smile-beam"></i>
+                    <i class="lab la-galactic-senate"></i>
                     <p><span class="counter">50</span></p>
                     <span>Years Completed</span>
                 </div>
@@ -270,11 +284,13 @@
                 <h3>Portfolio</h3>
                 <h2>Our Latest Work</h2>
             </div>
-            <div class="portfolo__content">
+            <div class="portfolo__content" id="lightgallery">
                 <div class="portfolo__item" data-aos="slide-up" data-aos-delay="100">
                     <img src="./img/pic1_2.jpg" alt="picture" />
                     <div class="portfolo__overlay">
-                        <i class="las la-plus"></i>
+                        <a href="./img/pic1_2.jpg" data-external-thumb-image="./img/pic1_2.jpg" data-sub-html="Design">
+                            <i class="las la-plus"></i>
+                        </a>
                         <div class="portfolo__desc">
                             <h3>Software Landing</h3>
                             <span>By Jhone Doe</span>
@@ -284,7 +300,9 @@
                 <div class="portfolo__item" data-aos="slide-up" data-aos-delay="100">
                     <img src="./img/pic2_1.jpg" alt="picture" />
                     <div class="portfolo__overlay">
-                        <i class="las la-plus"></i>
+                        <a href="./img/pic2_1.jpg" data-external-thumb-image="./img/pic2_1.jpg" data-sub-html="Design">
+                            <i class="las la-plus"></i>
+                        </a>
                         <div class="portfolo__desc">
                             <h3>Software Landing</h3>
                             <span>By Jhone Doe</span>
@@ -294,7 +312,9 @@
                 <div class="portfolo__item" data-aos="slide-up" data-aos-delay="600">
                     <img src="./img/pic3_1.jpg" alt="picture" />
                     <div class="portfolo__overlay">
-                        <i class="las la-plus"></i>
+                        <a href="./img/pic3_1.jpg" data-external-thumb-image="./img/pic3_1.jpg" data-sub-html="Design">
+                            <i class="las la-plus"></i>
+                        </a>
                         <div class="portfolo__desc">
                             <h3>Software Landing</h3>
                             <span>By Jhone Doe</span>
@@ -304,7 +324,9 @@
                 <div class="portfolo__item" data-aos="slide-up" data-aos-delay="800">
                     <img src="./img/pic4.jpg" alt="picture" />
                     <div class="portfolo__overlay">
-                        <i class="las la-plus"></i>
+                        <a href="./img/pic4.jpg" data-external-thumb-image="./img/pic4.jpg" data-sub-html="Design">
+                            <i class="las la-plus"></i>
+                        </a>
                         <div class="portfolo__desc">
                             <h3>Software Landing</h3>
                             <span>By Jhone Doe</span>
@@ -314,7 +336,9 @@
                 <div class="portfolo__item" data-aos="slide-up" data-aos-delay="1100">
                     <img src="./img/pic6.jpg" alt="picture" />
                     <div class="portfolo__overlay">
-                        <i class="las la-plus"></i>
+                        <a href="./img/pic6.jpg" data-external-thumb-image="./img/pic6.jpg" data-sub-html="Design">
+                            <i class="las la-plus"></i>
+                        </a>
                         <div class="portfolo__desc">
                             <h3>Software Landing</h3>
                             <span>By Jhone Doe</span>
@@ -324,7 +348,9 @@
                 <div class="portfolo__item" data-aos="slide-up" data-aos-delay="1300">
                     <img src="./img/pic5.jpg" alt="picture" />
                     <div class="portfolo__overlay">
-                        <i class="las la-plus"></i>
+                        <a href="./img/pic5.jpg" data-external-thumb-image="./img/pic5.jpg" data-sub-html="Design">
+                            <i class="las la-plus"></i>
+                        </a>
                         <div class="portfolo__desc">
                             <h3>Software Landing</h3>
                             <span>By Jhone Doe</span>
@@ -340,8 +366,8 @@
         <div class="grid">
             <!-- plan title -->
             <div class="title text-center">
-                <h3>What We Do Best</h3>
-                <h2>Our Digital Services</h2>
+                <h3>Choose Your Plan</h3>
+                <h2>Choose Your Plan</h2>
             </div>
             <div class="plan__content">
                 <!-- plan card wrap để gói lại từng item nhằm tạo padding trái phải -->
@@ -456,9 +482,80 @@
             </div>
         </div>
     </section>
-    <!--******************** FEEDBACK ***********************-->
-    <section class="feedback">
-
+    <!--******************** Testimonial ***********************-->
+     <section class="testimonial">
+        <div class="grid">
+            <div class="title text-center">
+                <h3>Testimonial</h3>
+                <h2>What Our Clients Say's</h2>
+            </div>
+            <div class="testimonial__bubble">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="testimonial__avatar">
+                            <img src="./img/pic1_4.jpg" alt="avatar" />
+                            <div class="testimonial__shape">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial__avatar">
+                            <img src="./img/pic2_3.jpg" alt="avatar" />
+                            <div class="testimonial__shape">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial__avatar">
+                            <img src="./img/pic3_3.jpg" alt="avatar" />
+                            <div class="testimonial__shape">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial__box">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="testimonial__content">
+                            <h3>Cak Dikin 1</h3>
+                            <span>CEO & Founder </span>
+                            <p>
+                                Duis feugiat est tincidunt ligula maximus convallis. Aenean ultricies, mi non
+                                vestibulumasn auctor, erat tortor porttitor ipsum, nec dictum tortor sem eget nunc.
+                                Etiam sed facilisis erat.
+                            </p>
+                            <i class="las la-quote-left"></i>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial__content">
+                            <h3>Cak Dikin 1</h3>
+                            <span>CEO & Founder </span>
+                            <p>
+                                Duis feugiat est tincidunt ligula maximus convallis. Aenean ultricies, mi non
+                                vestibulumasn auctor, erat tortor porttitor ipsum, nec dictum tortor sem eget nunc.
+                                Etiam sed facilisis erat.
+                            </p>
+                            <i class="las la-quote-left"></i>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial__content">
+                            <h3>Cak Dikin 1</h3>
+                            <span>CEO & Founder </span>
+                            <p>
+                                Duis feugiat est tincidunt ligula maximus convallis. Aenean ultricies, mi non
+                                vestibulumasn auctor, erat tortor porttitor ipsum, nec dictum tortor sem eget nunc.
+                                Etiam sed facilisis erat.
+                            </p>
+                            <i class="las la-quote-left"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>    
     </section>
     <!--******************** NEWS ***********************-->
     <section class="news">
@@ -468,8 +565,92 @@
                 <h3>Our Blog</h3>
                 <h2>Latest News & Blog</h2>
             </div>
-            <div class="news__content">
+            <div class="news__content owl-carousel">
                 <!-- news card wrap để gói lại từng item nhằm tạo padding trái phải -->
+                <div class="news__card-wrap">
+                    <div class="news__card">
+                        <div class="news__card-header">
+                            <img class="news__card-img" src="./img/pic3.jpg" alt="web dev" />
+                            <div class="news__card-time">
+                                <span>23 MARCH 2022</span>
+                            </div>
+                        </div>
+                        <div class="news__card-content">
+                            <h4 class="news__card-heading">Lorem ipsum dolor sit amet consectetur.</h4>
+                            <p class="news__card-desc">
+                                Nunc convallis sagittis dui eu dictum. Cras sodales id ipsum ac aliquam. Phasellus justoquam.
+                            </p>
+                        </div>
+                        <div class="news__card-footer">
+                            <div  class="news__card-author">
+                                <i class="las la-user-circle"></i>
+                                BY
+                                <span>Johne Doe</span>
+                            </div>
+                            <div class="news__card-comment">
+                                <i class="las la-comment"></i>
+                                COMMENTS
+                                <span>15</span>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="news__card-wrap">
+                    <div class="news__card">
+                        <div class="news__card-header">
+                            <img class="news__card-img" src="./img/pic1_1.jpg" alt="web dev" />
+                            <div class="news__card-time">
+                                <span>23 MARCH 2022</span>
+                            </div>
+                        </div>
+                        <div class="news__card-content">
+                            <h4 class="news__card-heading">Lorem ipsum dolor sit amet consectetur.</h4>
+                            <p class="news__card-desc">
+                                Nunc convallis sagittis dui eu dictum. Cras sodales id ipsum ac aliquam. Phasellus justoquam.
+                            </p>
+                        </div>
+                        <div class="news__card-footer">
+                            <div  class="news__card-author">
+                                <i class="las la-user-circle"></i>
+                                BY
+                                <span>Johne Doe</span>
+                            </div>
+                            <div class="news__card-comment">
+                                <i class="las la-comment"></i>
+                                COMMENTS
+                                <span>15</span>
+                            </div>
+                        </div>                     
+                    </div>
+                </div> 
+                <div class="news__card-wrap">
+                    <div class="news__card">
+                        <div class="news__card-header">
+                            <img class="news__card-img" src="./img/pic2.jpg" alt="web dev" />
+                            <div class="news__card-time">
+                                <span>23 MARCH 2022</span>
+                            </div>
+                        </div>
+                        <div class="news__card-content">
+                            <h4 class="news__card-heading">Lorem ipsum dolor sit amet consectetur.</h4>
+                            <p class="news__card-desc">
+                                Nunc convallis sagittis dui eu dictum. Cras sodales id ipsum ac aliquam. Phasellus justoquam.
+                            </p>
+                        </div>
+                        <div class="news__card-footer">
+                            <div  class="news__card-author">
+                                <i class="las la-user-circle"></i>
+                                BY
+                                <span>Johne Doe</span>
+                            </div>
+                            <div class="news__card-comment">
+                                <i class="las la-comment"></i>
+                                COMMENTS
+                                <span>15</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="news__card-wrap">
                     <div class="news__card">
                         <div class="news__card-header">
@@ -721,7 +902,7 @@
     </a>
 
     <!-- AOS lib -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
     AOS.init({
         duration: 2000,
@@ -738,10 +919,87 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./lib/count_up/jquery.countup.min.js"></script>
     <script>
-        $('.counter').countUp();
+        console.log($('.counter'))
+        $('.counter').countUp({
+            'time': 2000,
+            'delay': 10,
+        });
     </script>
     <!-- back to top lib -->
     <script src="./lib/back_to_top/util.js"></script>
     <script src="./lib/back_to_top/main.js"></script>
+    <!-- owl carousel lib -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(document).ready(function(){
+            $(".owl-carousel").owlCarousel();
+            loop: true;
+        });
+        var  owl = $('.owl-carousel')
+        owl.owlCarousel({
+            loop:true,
+            responsiveClass:true,
+            autoplay: true,
+            autoplayTimeout: 2500,
+            responsive:{
+                0:{
+                    items:1,
+                },
+                700:{
+                    items:2,
+                },
+                1200:{
+                    items:3,
+                }
+            }
+        })
+    </script>
+    <!-- light galery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0/lightgallery.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0/plugins/autoplay/lg-autoplay.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0/plugins/thumbnail/lg-thumbnail.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0/plugins/share/lg-share.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0/plugins/fullscreen/lg-fullscreen.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0/plugins/zoom/lg-zoom.min.js"></script>
+    
+    <script type="text/javascript">
+        lightGallery(document.getElementById("lightgallery"), {
+            selector: ".portfolo__item a",
+            plugins: [lgZoom, lgThumbnail, lgAutoplay, lgFullscreen, lgShare],
+            allowMediaOverlap: true,
+            toggleThumb: true,
+            showZoomInOutIcons: true,
+            actualSize: false,
+            speed: 500,
+            exThumbImage: 'data-external-thumb-image'
+        }); 
+    </script>
+
+    <!-- swiper slider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.4/swiper-bundle.min.js" integrity="sha512-Hvn3pvXhhG39kmZ8ue3K8hw8obT4rfLXHE5n+IWNCMkR6oV3cfkQNUQqVvX3fNJO/JtFeo/MfLmqp5bqAT+8qg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        var testimonialBubble = new Swiper(".testimonial__bubble", {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            centeredSlides: true,
+            freeMode: true,
+            autoplay: true,
+            loop: true,
+            speed: 3000
+        });
+        var testimonialBox = new Swiper(".testimonial__box", {
+            spaceBetween: 10,
+            autoplay: true,
+            loop: true,
+            speed: 3000,
+            thumbs: {
+                swiper: testimonialBubble
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            }
+            });
+    </script>
 </body>
 </html>
