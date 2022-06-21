@@ -643,7 +643,7 @@
     right: 50%;
     background-color: var(--primary-color);
     transform: translate(50%,40px);
-    background-image: url(../img/pattern12.png);
+    background-image: url('../img/pattern12.png');
     background-position: bottom;
     background-size: contain;
     background-repeat: no-repeat;
@@ -651,15 +651,18 @@
     opacity: 0;
 }
 
-.swiper-slide-active .testimonial__shape {
+.swiper-slide-thumb-active .testimonial__shape {
     transform: translate(50%,0);
     opacity: 1;
 }
-.swiper-slide-active .testimonial__avatar img {
+
+.swiper-slide-thumb-active .testimonial__avatar img {
     transform: translateY(0);
 }
-.swiper-slide-active .testimonial__avatar::after,
-.swiper-slide-active .testimonial__avatar::before {
+
+
+.swiper-slide-thumb-active .testimonial__avatar::after,
+.swiper-slide-thumb-active .testimonial__avatar::before{
     opacity: 1;
 }
 
